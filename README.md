@@ -134,7 +134,9 @@ Create a user-defined bridge network We need the microservices to be able to com
 ```sh
 docker network create shikhar
 ```
-Run the Containers Note: We'll only be exposing frontend service on 8080 and nothing else. Rest of the communication will happen via names using user defined bridge network.
+## Run the Containers 
+
+Note: We'll only be exposing frontend service on 8080 and nothing else. Rest of the communication will happen via names using user defined bridge network.
 ```sh
 docker run --env-file ~/Desktop/env.txt -dit --network shikhar --name currencyservice currencyservice
 docker run --env-file ~/Desktop/env.txt -dit --network shikhar --name paymentservice paymentservice

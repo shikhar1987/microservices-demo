@@ -187,7 +187,7 @@ Happy Dockering :)
     - 2 private subnets (with no route to IGW). Add the tags _kubernetes.io/role/internal-elb_ with value 1 to both of them.
     - 2 public subnets (with route to IGW). Add the tags _kubernetes.io/role/elb_ with value 1 to both of them.
 
-    More details [here](https://docs.aws.amazon.com/eks/latest/userguide/network-load-balancing.html)
+    More details [here](https://docs.aws.amazon.com/eks/latest/userguide/network-load-balancing.html) and [here](https://kubernetes-sigs.github.io/aws-load-balancer-controller/v2.5/guide/service/nlb/)
 
 3. Create a node group and attach it to your cluster by following [this](https://docs.aws.amazon.com/eks/latest/userguide/create-managed-node-group.html) article.
 
@@ -339,7 +339,8 @@ Happy Dockering :)
 
 17. Paste that public domain name with port 81 on your browser and make sure you are able to get to hipster shop demo website.
 
-18. Deploy splunk otel collector using helm chart and custom values file to enable network explorer and forwarding of logs to your existing splunk core environment.
+18. Deploy splunk otel collector using helm chart and custom values file (available in this repo) to enable network explorer and forwarding of logs to your existing splunk core environment.
+    > helm --namespace=default install --generate-name splunk-otel-collector-chart/splunk-otel-collector -f values.yaml
 
 ## Screenshots
 

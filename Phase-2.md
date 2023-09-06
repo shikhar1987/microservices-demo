@@ -1,4 +1,4 @@
-# Phase 2: Deploying this on EKS
+# Phase 2: Deployment on EKS
 1. Login to AWS web console and create a EKS cluster
 
 2. Choose a VPC with 4 subnets

@@ -18,7 +18,7 @@ If you’re using this demo, please **★Star** this repository to show your int
 
 \*\*We'll be using this to demonstrate capabilities of Splunk Observability Cloud offerings. We'll be doing it in phases:
 
-[Phase 1](https://github.com/shikhar1987/microservices-demo/blob/main/phase-1.md)
+[Phase 1](https://github.com/shikhar1987/microservices-demo/blob/main/Phase-1.md)
 
 # Phase 2: Deploying this on EKS
 1. Login to AWS web console and create a EKS cluster

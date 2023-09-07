@@ -26,8 +26,9 @@ If you’re using this demo, please **★Star** this repository to show your int
 
 [Deployment on GKE](https://github.com/shikhar1987/microservices-demo/blob/main/GKE.md)
 
-- **Istio/Anthos Service Mesh**: [See these instructions.](/kustomize/components/service-mesh-istio/README.md)
-- **non-GKE clusters (Minikube, Kind)**: see the [Development Guide](/docs/development-guide.md)
+[Istio/Anthos Service Mesh](/kustomize/components/service-mesh-istio/README.md)
+
+[non-GKE clusters (Minikube, Kind)](/docs/development-guide.md)
 
 ## Screenshots
 

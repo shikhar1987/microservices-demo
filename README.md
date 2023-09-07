@@ -16,7 +16,7 @@ Kubernetes Engine (GKE). It’s **easy to deploy with little to no configuration
 
 If you’re using this demo, please **★Star** this repository to show your interest!
 
-**We'll be using this to demonstrate capabilities of Splunk Observability Cloud offerings. We'll be doing it in phases: **
+**We'll be using this to demonstrate capabilities of Splunk Observability Cloud offerings. We'll be doing it in phases:**
 
 ## Deployment variations
 

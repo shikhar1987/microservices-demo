@@ -22,7 +22,9 @@ If you’re using this demo, please **★Star** this repository to show your int
 
 [Deployment on Docker](https://github.com/shikhar1987/microservices-demo/blob/main/Phase-1.md)
 
-[Deployment on EKS](https://github.com/shikhar1987/microservices-demo/blob/main/Phase-2.md)
+[Deployment on EKS (with EC2 node)](https://github.com/shikhar1987/microservices-demo/blob/main/Phase-2.md)
+
+[Deployment on EKS (with Fargate)](https://github.com/shikhar1987/microservices-demo/blob/main/Phase-3.md)
 
 [Deployment on GKE](https://github.com/shikhar1987/microservices-demo/blob/main/GKE.md)
 

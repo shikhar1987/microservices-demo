@@ -1,4 +1,4 @@
-# Phase 1 (Docker)
+# Docker
 Modify the configuration a bit on 2 microservices (paymentservice and currencyservice) so that it can run on docker environment
 
 Create Docker images for all the microservices

@@ -1,8 +1,8 @@
 # Deployment on EKS (With Fargate)
 1. Create a fargate cluster
-    ```
-        eksctl create cluster --name Shikhar-EKS --region ap-southeast-2 --fargate
-    ```
+
+    >eksctl create cluster --name Shikhar-EKS --region ap-southeast-2 --fargate
+
 
 2. Install AWS Load Balancer Controller on fargate. More details can be found in [this](https://docs.aws.amazon.com/eks/latest/userguide/aws-load-balancer-controller.html) article.
     - Check OIDC provider URL for your cluster:
@@ -13,7 +13,7 @@
       ```
     - Check if you have IAM OIDC provider in your account:
       ```
-➜        aws iam list-open-id-connect-providers | grep A07C9EBEBEE58E76287E8318761F0B9F
+        aws iam list-open-id-connect-providers | grep A07C9EBEBEE58E76287E8318761F0B9F
 
         "Arn": "arn:aws:iam::972204093366:oidc-provider/oidc.eks.ap-southeast-2.amazonaws.com/id/A07C9EBEBEE58E76287E8318761F0B9F"
       ```

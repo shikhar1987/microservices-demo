@@ -26,6 +26,7 @@ import (
 )
 
 type productCatalog struct {
+	pb.UnimplementedProductCatalogServiceServer
 	catalog pb.ListProductsResponse
 }
 
@@ -62,7 +63,6 @@ func (p *productCatalog) GetProduct(ctx context.Context, req *pb.GetProductReque
 func (p *productCatalog) SearchProducts(ctx context.Context, req *pb.SearchProductsRequest) (*pb.SearchProductsResponse, error) {
 	time.Sleep(extraLatency)
 
-	// Interpret query as a substring match in name or description.
 	var ps []*pb.Product
 	for _, product := range p.parseCatalog() {
 		if strings.Contains(strings.ToLower(product.Name), strings.ToLower(req.Query)) ||
@@ -76,7 +76,7 @@ func (p *productCatalog) SearchProducts(ctx context.Context, req *pb.SearchProdu
 
 func (p *productCatalog) parseCatalog() []*pb.Product {
 	if reloadCatalog || len(p.catalog.Products) == 0 {
-		err := readCatalogFile(&p.catalog)
+		err := loadCatalog(&p.catalog)
 		if err != nil {
 			return []*pb.Product{}
 		}
